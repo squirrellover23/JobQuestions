@@ -1,16 +1,25 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def reverse_string(string):
+    return string[::-1]
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def largest_of_three(x, y, z):
+    return max([x, y, z])
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+def factorial(x: int):
+    if x == 0:
+        return 1
+    else:
+        return x * factorial(x-1)
+
+
+def fib_sequence(x: int):
+    if x == 1:
+        return 1
+    elif x == 2:
+        return 1
+    else:
+        return fib_sequence(x - 1) + fib_sequence(x - 2)
+
